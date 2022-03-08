@@ -10,7 +10,7 @@ public class Monomial implements Comparable<Monomial>{
         this.n = n;
     }
 
-    protected int n;
+    private int n;
 
     @Override
     public int compareTo(Monomial o) {

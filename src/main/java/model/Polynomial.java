@@ -26,14 +26,6 @@ public class Polynomial {
         polynomial.add(monomial);
     }
 
-    public void printPol(){
-        for (Monomial mon:
-             polynomial) {
-            System.out.print(mon.toString() + " + ");
-        }
-        System.out.println();
-    }
-
     public void sortByPower(){
         Collections.sort(polynomial);
     }
