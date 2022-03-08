@@ -20,9 +20,10 @@ public class View extends JFrame{
     JButton integrate = new JButton("Integrate");
     JButton derivative = new JButton("Derivative");
 
-    Controller c = new Controller();
+    Controller c;
 
-    public View(){
+    public View(Controller c){
+        this.c = c;
         setSize(300,500);
         setLayout(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
