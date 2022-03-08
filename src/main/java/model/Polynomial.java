@@ -10,9 +10,7 @@ public class Polynomial {
     public Polynomial(Monomial mon){
         polynomial.add(mon);
     }
-    public Polynomial(){
-
-    }
+    public Polynomial(){ }
 
     public void addMonomial(int coefficient,int power){
         polynomial.add(new Monomial((float)coefficient,power));

@@ -6,11 +6,7 @@ public class Monomial implements Comparable<Monomial>{
         return n;
     }
 
-    public void setN(int n) {
-        this.n = n;
-    }
-
-    private int n;
+    private final int n;
 
     @Override
     public int compareTo(Monomial o) {
@@ -21,10 +17,7 @@ public class Monomial implements Comparable<Monomial>{
         return c;
     }
 
-    public void setC(float c) {
-        this.c = c;
-    }
-    private float c;
+    private final float c;
 
     public Monomial(float c, int n){
         this.c = c;
