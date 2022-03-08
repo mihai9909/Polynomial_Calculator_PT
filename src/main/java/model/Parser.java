@@ -9,7 +9,7 @@ public class Parser {
         Polynomial pol = new Polynomial();
         polynomialString = polynomialString.replaceAll("\\s","");
 
-        Pattern pattern = Pattern.compile("([-|+]?\\d+\\*?x\\^\\d+)+");
+        Pattern pattern = Pattern.compile("[-|+]?\\d+\\*?x\\^\\d+([-|+]\\d+\\*?x\\^\\d+)*");
         Matcher matcher = pattern.matcher(polynomialString);
         matcher.find();
         if(!matcher.matches()) {
